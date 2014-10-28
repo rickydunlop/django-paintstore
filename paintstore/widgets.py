@@ -13,7 +13,7 @@ class ColorPickerWidget(forms.TextInput):
             ("%s%s" % (settings.STATIC_URL, "paintstore/colorpicker.js")), 
         )
 
-    input_type = 'colorpicker'
+    input_type = 'text'
 
     def render(self, name, value, attrs=None):
         script = u"""<script type='text/javascript'>
